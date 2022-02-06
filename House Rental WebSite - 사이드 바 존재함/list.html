@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navBar" class="navbar-white">
+        <img src="images/logo-red.png" class="logo">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="container">
+
+        <div class="list-container">
+            <div class="left-col">
+                <p>200+ Options</p>
+                <h1>Recommended Places In San Francisco</h1>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/image-s1.png">
+                    </div>
+                    <div class="housh-info">
+                        <p>Private Villa in San Francisco</p>
+                        <h3>Deluxe Queen With Street View</h3>
+                        <p>1 Bedroom / 1 Bathroom / Wifi / Kitchen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col"></div>
+        </div>
+         
+        <div class="footer" >
+            <a href="javascript:goToThatWeb('https://facebook.com/')"><i class="fab fa-facebook-f"></i></a>
+            <a href="javascript:goToThatWeb('https://youtube.com/')"><i class="fab fa-youtube"></i></a>
+            <a href="javascript:goToThatWeb('https://twitter.com/')"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:goToThatWeb('https://linkedin.com/')"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:goToThatWeb('https://instagram.com/')"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright ⓒ 2021, Easy Tutorials.</p>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        function goToThatWeb(urlWeb) {
+            window.open(urlWeb);
+        }
+
+        var navBar = document.getElementById("navBar");
+        
+        function togglebtn( ) {
+            navBar.classList.toggle("hidemenu")
+            // https://itmore.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-classList-%EC%A0%95%EC%9D%98-%EB%B0%8F-js%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0
+            // 에 저 classList 에 대한 정의가 잘 나와있다.
+            // toggle 은 지정된 태그 (여기서는 navBar)에 class="hidemenu" 가 있으면 제거하고 없으면 class="hidemenu" 를 추가시킨다.
+            // 그래서 햄버거 바 버튼을 누르면 class="hidemenu" 가 생겨 메뉴창이 밑으로 쭉 내려오고, 다시 햄버거 바를 클릭하면 class="hidemenu" 가 제거되어
+            // 메뉴창이 위로 쭉 올라간다.
+        }
+
+
+    </script>
+    
+</body>
+</html>
