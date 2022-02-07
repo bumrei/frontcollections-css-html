@@ -29,7 +29,7 @@
                 <form>
                     <div class="location-input">
                         <label>Location</label>
-                        <input type="text" placeholder="어디로 가시겠습니까?">
+                        <input type="text" placeholder="그냥 검색을 누르세요 ㅎㅎ">
                     </div>
                     <div>
                         <label>Check In</label>
@@ -43,7 +43,7 @@
                         <label>Guest</label>
                         <input type="text" placeholder="명 수 입력">
                     </div>
-                    <button type="submit"><img src="images/search.png"></button>
+                    <button id="searchBtn" type="submit"><img src="images/search.png"></button>
                 </form>
             </div>
         </div>
@@ -184,8 +184,17 @@
             <p>Copyright ⓒ 2021, Easy Tutorials.</p>
         </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
+
+
+    
+
+
+        
+
 
         function goToThatWeb(urlWeb) {
             window.open(urlWeb);
@@ -202,7 +211,19 @@
             // 메뉴창이 위로 쭉 올라간다.
         }
 
+        
 
+
+    </script>
+
+    <script>
+            document.querySelector("#searchBtn").addEventListener("click", (e)=> {
+                e.stopPropagation()
+                e.preventDefault()
+
+            window.location.href = 'list.html'
+
+        }, false);
     </script>
 </body>
 </html>
