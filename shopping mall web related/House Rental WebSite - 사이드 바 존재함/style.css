@@ -467,15 +467,15 @@ nav.navbar-white .fa-bars{
     justify-content: space-between;
 }
 
-.left-col{
+.right-col{
     flex-basis: 70%;
 }
 
-.right-col{
+.left-col{
     flex-basis: 25%;
 }
 
-.left-col h1{
+.right-col h1{
     color: #333;
     font-weight: 600;
     margin-bottom: 30px;
@@ -613,11 +613,11 @@ nav.navbar-white .fa-bars{
         margin-top: 150px; 
     }
 
-    .left-col, .right-col, .house-img, .house-info{
+    .right-col, .left-col, .house-img, .house-info{
         flex-basis: 100%;
     }
 
-    .left-col h1{
+    .right-col h1{
         font-size: 22px;
     }
 
