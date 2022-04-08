@@ -9,6 +9,8 @@ let numberOfImages = slideImage.length;
 
 let currentSlide = 0;
 
+console.log("hahahaha")
+
 
 // Set up the slider
 function init() {
